@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import './App.css';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
               model: "Toyota Corolla Altis",
               licensePlate: "CO42DE"
             }} />
+          <LikeButton/>
     </div>
     
   );
