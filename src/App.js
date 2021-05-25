@@ -85,7 +85,8 @@ function App() {
               licensePlate: "CO42DE"
             }} />
           <LikeButton/>
-          <ClickablePicture/>
+          <ClickablePicture   img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'/>
           <Dice/>
     </div>
     

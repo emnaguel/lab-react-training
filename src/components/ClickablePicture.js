@@ -5,15 +5,15 @@ class ClickablePicture extends Component {
         picture: '/img/persons/maxence.png'
     }
     
-    togglePicture= () => {
+    togglePicture= (img, imgClicked) => {
         this.setState({
-            picture: this.state.picture === '/img/persons/maxence.png' ? '/img/persons/maxence-glasses.png' : '/img/persons/maxence.png'
+            picture: this.state.picture === img ? imgClicked : img
         })
     }
-  render() {
+  render(props) {
     return (
-      <div>
-        <img onClick={this.togglePicture} src= {this.state.picture}/>
+      <div >
+        <img onClick={() => this.togglePicture(this.props.img, this.props.imgClicked)} src= {this.state.picture}/>
       </div>
     )
   }
