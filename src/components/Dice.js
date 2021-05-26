@@ -21,7 +21,7 @@ export class Dice extends Component {
     render() {
         return (
             <div >
-                <img style={{height: "60px"}} src={this.state.picture} onClick={this.handleClick}/>
+                <img alt="Dice" style={{height: "60px"}} src={this.state.picture} onClick={this.handleClick}/>
             </div>
         )
     }

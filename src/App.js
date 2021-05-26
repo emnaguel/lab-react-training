@@ -9,6 +9,9 @@ import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice'
+import FaceBook from './components/FaceBook'
+import NumbersTable from './components/NumbersTable'
+
 import './App.css';
 
 function App() {
@@ -88,6 +91,9 @@ function App() {
           <ClickablePicture   img='/img/persons/maxence.png'
   imgClicked='/img/persons/maxence-glasses.png'/>
           <Dice/>
+          <FaceBook/>
+          <hr/>
+          <NumbersTable limit={12}/>
     </div>
     
   );
